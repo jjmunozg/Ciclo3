@@ -20,7 +20,7 @@ public class Message implements Serializable {
     private Cabin cabin;
 
     @ManyToOne
-    @JoinColumn(name="clientId")
+    @JoinColumn(name="idClient")
     @JsonIgnoreProperties({"messages", "reservations", "client"})
     private Client client;
 

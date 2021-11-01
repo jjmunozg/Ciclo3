@@ -48,6 +48,9 @@ public class ClientService {
                 if(client.getPassword()!=null){
                     e.get().setPassword(client.getPassword());
                 }
+                if(client.getEmail()!=null){
+                    e.get().setPassword(client.getEmail());
+                }
                 clientRepository.save(e.get());
                 return e.get();
             }else{
